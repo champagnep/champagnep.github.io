@@ -3,67 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LegalEase - Simplify Legal Operations</title>
+  <title>LegalEase - Precision Legal Management</title>
   <style>
-    /* Basic Reset and Styling */
+    /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-    body { color: #333; background: #f4f6f8; line-height: 1.6; display: flex; flex-direction: column; align-items: center; }
+    body { background-color: #fff; color: #111; line-height: 1.6; display: flex; flex-direction: column; align-items: center; }
+
+    /* Header / Navbar */
+    header { width: 100%; padding: 1.5em 2em; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; }
+    .logo { font-size: 1.5em; font-weight: bold; text-decoration: none; color: #111; }
+    .nav-links a { margin: 0 1em; text-decoration: none; color: #111; font-size: 0.9em; }
+    .cta-buttons { display: flex; gap: 0.8em; }
+    .cta-buttons a { padding: 0.5em 1em; border-radius: 4px; font-weight: bold; text-decoration: none; }
+
+    /* Button Styling */
+    .btn-primary { background-color: #1a73e8; color: #fff; }
+    .btn-secondary { border: 1px solid #111; color: #111; }
+    .btn-primary:hover { background-color: #155bb5; }
+    .btn-secondary:hover { background-color: #111; color: #fff; }
 
     /* Hero Section */
-    .hero { text-align: center; padding: 5em 1.5em; background: linear-gradient(135deg, #1a73e8, #5578e5); color: #fff; width: 100%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
-    .hero h1 { font-size: 2.5em; margin-bottom: 0.3em; }
-    .hero p { font-size: 1.2em; max-width: 800px; margin: 0 auto 1.5em; }
-    .cta-buttons { display: flex; justify-content: center; gap: 1em; }
-    .cta-buttons a { padding: 0.8em 1.8em; border-radius: 5px; color: #fff; font-weight: bold; transition: background 0.3s; text-decoration: none; }
-    .cta-buttons .btn-primary { background: #ffd54f; color: #333; }
-    .cta-buttons .btn-primary:hover { background: #ffb300; }
-    .cta-buttons .btn-secondary { background: #6c757d; }
-    .cta-buttons .btn-secondary:hover { background: #5a6268; }
+    .hero { padding: 5em 2em; text-align: center; max-width: 900px; margin: 0 auto; }
+    .hero h1 { font-size: 3em; font-weight: bold; line-height: 1.2; margin-bottom: 0.5em; }
+    .hero p { font-size: 1.2em; color: #555; margin-bottom: 1.5em; }
+    .hero .cta-buttons { justify-content: center; margin-top: 1em; }
 
-    /* Features Section */
-    .features { padding: 2em; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; width: 90%; max-width: 1200px; }
-    .feature { background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s; }
-    .feature:hover { transform: translateY(-5px); }
-    .feature h3 { font-size: 1.4em; color: #1a73e8; margin-bottom: 0.5em; }
-    .feature p { font-size: 1em; color: #555; }
+    /* Image Style */
+    .hero-image { width: 100%; max-width: 700px; margin: 2em auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
 
     /* Footer */
-    footer { text-align: center; padding: 2em 0; font-size: 0.9em; color: #777; background: #f4f4f4; width: 100%; margin-top: auto; }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2em; }
-      .hero p { font-size: 1em; }
-    }
+    footer { text-align: center; padding: 2em 0; font-size: 0.9em; color: #777; width: 100%; border-top: 1px solid #ddd; margin-top: auto; }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">LegalEase</a>
+    <nav class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#customers">Customers</a>
+      <a href="#resources">Resources</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#company">Company</a>
+    </nav>
+    <div class="cta-buttons">
+      <a href="#demo" class="btn-primary">Book a demo</a>
+      <a href="#free" class="btn-secondary">Try for FREE</a>
+    </div>
+  </header>
+
   <!-- Hero Section -->
   <section class="hero">
-    <h1>LegalEase</h1>
-    <p>Effortless legal matter management for in-house teams. Simplify tracking and oversight of external counsel with our centralized platform.</p>
+    <h1>Power of Precision. Efficiency in Legal Workflows.</h1>
+    <p>Combine streamlined contract review with data extraction to enhance your team's productivity and decision-making.</p>
     <div class="cta-buttons">
-      <a href="#signup" class="btn-primary">Get Started</a>
-      <a href="#contact" class="btn-secondary">Learn More</a>
+      <a href="#demo" class="btn-primary">Book a demo</a>
+      <a href="#free" class="btn-secondary">Try for free</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="feature">
-      <h3>Centralized Dashboard</h3>
-      <p>Organize and access all legal matters in one streamlined dashboard, improving visibility and control.</p>
-    </div>
-    <div class="feature">
-      <h3>Email Integration</h3>
-      <p>Track and archive all relevant emails directly within the platform, ensuring complete communication records.</p>
-    </div>
-    <div class="feature">
-      <h3>Data-Driven Insights</h3>
-      <p>Leverage analytics to make data-backed decisions on legal spending and partner performance.</p>
-    </div>
-  </section>
+  <!-- Optional Placeholder for Hero Image -->
+  <img src="path-to-hero-image.jpg" alt="Illustrative image for LegalEase" class="hero-image">
 
   <!-- Footer -->
   <footer>
